@@ -1,0 +1,20 @@
+{
+  "name": "aveva-sp-toolkit",
+  "interface": {
+    "displayName": "AVEVA SP Toolkit"
+  },
+  "plugins": [
+    {
+      "name": "aveva-sp-toolkit",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
