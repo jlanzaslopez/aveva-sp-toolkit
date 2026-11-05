@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aveva-sp-toolkit",
-  "version": "0.1.0",
-  "description": "Skills de AVEVA System Platform: QuickScript .NET para Application Server, Industrial Graphics, OMI e InTouch.",
+  "version": "0.2.0",
+  "description": "Skills de AVEVA System Platform: QuickScript .NET y consultas SQL de recuperación de Historian.",
   "author": {
     "name": "jlanzaslopez"
   },
@@ -11,8 +11,8 @@
     "com.openai": {
       "interface": {
         "displayName": "AVEVA SP Toolkit",
-        "shortDescription": "Scripting de AVEVA SP",
-        "longDescription": "Ayuda para escribir, revisar y diagnosticar QuickScript .NET, con referencias de sintaxis, contextos de ejecución, funciones y ejemplos. Basado en la guía AVEVA de 2020 y orientado a System Platform 2023; los ejemplos aún requieren validación en la instalación de destino.",
+        "shortDescription": "Scripting y SQL de AVEVA SP",
+        "longDescription": "Ayuda para escribir, revisar y diagnosticar QuickScript .NET y consultas SQL de AVEVA Historian. Incluye sintaxis, contextos de ejecución, funciones, modos de recuperación, ciclos, calidad, tiempo, alarmas y ejemplos. Basado en las guías AVEVA de 2020 y orientado a System Platform 2023; los ejemplos requieren validación en la instalación de destino.",
         "developerName": "jlanzaslopez",
         "category": "Developer Tools",
         "capabilities": []

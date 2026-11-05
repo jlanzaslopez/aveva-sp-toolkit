@@ -7,7 +7,7 @@ Complemento de skills para trabajar con AVEVA System Platform. Cada skill contie
 | Skill | Estado | Contenido |
 |---|---|---|
 | [Scripting](skills/scripting/SKILL.md) | Primera versión | QuickScript .NET: sintaxis, ejecución, funciones y ejemplos para objetos Application Server, Industrial Graphics, OMI e InTouch |
-| Historian SQL | Pendiente | Se incorporará en `skills/historian-sql/` cuando se prepare su contenido |
+| [Historian SQL](skills/historian-sql/SKILL.md) | Primera versión | INSQL, History/WideHistory, modos de recuperación, ciclos, calidad, tiempo, resúmenes, alarmas y orientación REST/OData |
 
 ## Estructura actual
 
@@ -18,21 +18,28 @@ aveva-sp-toolkit/
 │       └── marketplace.json
 ├── plugin.json
 ├── skills/
-│   └── scripting/
+│   ├── scripting/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   │       ├── syntax.md
+│   │       ├── execution.md
+│   │       ├── functions.md
+│   │       └── examples.md
+│   └── historian-sql/
 │       ├── SKILL.md
 │       └── references/
-│           ├── syntax.md
-│           ├── execution.md
-│           ├── functions.md
-│           └── examples.md
+│           ├── querying.md
+│           ├── retrieval-modes.md
+│           ├── options-quality-time.md
+│           ├── examples.md
+│           ├── alarms-events.md
+│           └── interfaces.md
 └── README.md
 ```
 
-La estructura prevista para Historian SQL es `skills/historian-sql/SKILL.md` con su carpeta `references/`. Todavía no se incluye una skill vacía.
-
 ## Uso
 
-Abrir el `SKILL.md` de la especialidad y seguir sus enlaces a las referencias. La carpeta `skills/scripting/` contiene la skill cuyo identificador es `aveva-sp-scripting`; sus enlaces son relativos y se conserva como unidad al copiarla o instalarla.
+Abrir el `SKILL.md` de la especialidad y seguir sus enlaces a las referencias. `skills/scripting/` contiene la skill `aveva-sp-scripting`; `skills/historian-sql/` contiene `aveva-sp-historian-sql`. Los enlaces son relativos: conservar cada carpeta como unidad al copiarla o instalarla. El complemento incorpora ambas skills.
 
 ## Añadir el marketplace en ChatGPT
 
@@ -52,6 +59,8 @@ Referencias oficiales: [formato del complemento y marketplace](https://developer
 
 ## Fuentes y validación
 
-Scripting se basa en el *AVEVA Application Server Scripting Guide*, publicado el 2 de octubre de 2020. Las referencias citan páginas internas del manual y distinguen sus erratas de las adaptaciones propuestas. El PDF original no se redistribuye.
+Scripting se basa en el *AVEVA Application Server Scripting Guide*, publicado el 2 de octubre de 2020. Historian SQL se basa en el *AVEVA Historian Retrieval Guide*, publicado el 3 de diciembre de 2020 (243 páginas). Las referencias citan páginas internas de los manuales y distinguen sus erratas de las adaptaciones propuestas. Los PDF originales no se redistribuyen.
+
+La skill Historian SQL se centra en los capítulos SQL y añade una referencia de orientación para REST/OData/SSRS; no reemplaza la *Historian Database Reference* ni la documentación actual de los endpoints de cada instalación. No se han ejecutado consultas contra un servidor de planta para preparar esta versión.
 
 El objetivo de uso es System Platform 2023. Los ejemplos se han cotejado documentalmente; todavía no se han compilado ni ejecutado en esa versión. Antes de usarlos en una instalación, comprobar contexto, dependencias, calidad de datos y permisos. El repositorio no instala ni despliega cambios automáticamente.
