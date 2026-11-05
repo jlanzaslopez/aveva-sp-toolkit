@@ -9,6 +9,8 @@ Complemento de skills para trabajar con AVEVA System Platform. Cada skill contie
 | [Scripting](skills/scripting/SKILL.md) | Primera versión | QuickScript .NET: sintaxis, ejecución, funciones y ejemplos para objetos Application Server, Industrial Graphics, OMI e InTouch |
 | [Historian SQL](skills/historian-sql/SKILL.md) | Primera versión | INSQL, History/WideHistory, modos de recuperación, ciclos, calidad, tiempo, resúmenes, alarmas y orientación REST/OData |
 
+| [Object Viewer](skills/object-viewer/SKILL.md) | Primera versión | Ficheros XML de watchlists con pestañas, orden y arrays; diagnóstico del modo avanzado |
+
 ## Estructura actual
 
 ```text
@@ -25,6 +27,8 @@ aveva-sp-toolkit/
 │   │       ├── execution.md
 │   │       ├── functions.md
 │   │       └── examples.md
+│   ├── object-viewer/
+│   │   └── SKILL.md
 │   └── historian-sql/
 │       ├── SKILL.md
 │       └── references/
@@ -39,7 +43,7 @@ aveva-sp-toolkit/
 
 ## Uso
 
-Abrir el `SKILL.md` de la especialidad y seguir sus enlaces a las referencias. `skills/scripting/` contiene la skill `aveva-sp-scripting`; `skills/historian-sql/` contiene `aveva-sp-historian-sql`. Los enlaces son relativos: conservar cada carpeta como unidad al copiarla o instalarla. El complemento incorpora ambas skills.
+Abrir el `SKILL.md` de la especialidad y seguir sus enlaces a las referencias. `skills/scripting/` contiene la skill `aveva-sp-scripting`; `skills/historian-sql/` contiene `aveva-sp-historian-sql`. Los enlaces son relativos: conservar cada carpeta como unidad al copiarla o instalarla. `skills/object-viewer/` contiene `aveva-sp-object-viewer`. El complemento incorpora las tres skills.
 
 ## Añadir el marketplace en ChatGPT
 
@@ -64,3 +68,5 @@ Scripting se basa en el *AVEVA Application Server Scripting Guide*, publicado el
 La skill Historian SQL se centra en los capítulos SQL y añade una referencia de orientación para REST/OData/SSRS; no reemplaza la *Historian Database Reference* ni la documentación actual de los endpoints de cada instalación. No se han ejecutado consultas contra un servidor de planta para preparar esta versión.
 
 El objetivo de uso es System Platform 2023. Los ejemplos se han cotejado documentalmente; todavía no se han compilado ni ejecutado en esa versión. Antes de usarlos en una instalación, comprobar contexto, dependencias, calidad de datos y permisos. El repositorio no instala ni despliega cambios automáticamente.
+
+Object Viewer se basa en ejemplos XML y un extracto de guía aportados por el usuario. Entrega archivos `.xml`, conserva el orden y admite arrays completos (`[]`) y elementos (`[2]`). La importación real no se ha probado. El comando del modo avanzado está pendiente de diagnóstico en el equipo del usuario; se distingue la sintaxis de CMD de PowerShell.

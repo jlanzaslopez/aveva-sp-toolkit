@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aveva-sp-toolkit",
-  "version": "0.2.0",
-  "description": "Skills de AVEVA System Platform: QuickScript .NET y consultas SQL de recuperación de Historian.",
+  "version": "0.3.0",
+  "description": "Skills AVEVA: scripting, SQL de Historian y watchlists XML de Object Viewer.",
   "author": {
     "name": "jlanzaslopez"
   },
@@ -11,8 +11,8 @@
     "com.openai": {
       "interface": {
         "displayName": "AVEVA SP Toolkit",
-        "shortDescription": "Scripting y SQL de AVEVA SP",
-        "longDescription": "Ayuda para escribir, revisar y diagnosticar QuickScript .NET y consultas SQL de AVEVA Historian. Incluye sintaxis, contextos de ejecución, funciones, modos de recuperación, ciclos, calidad, tiempo, alarmas y ejemplos. Basado en las guías AVEVA de 2020 y orientado a System Platform 2023; los ejemplos requieren validación en la instalación de destino.",
+        "shortDescription": "Scripting, SQL y Object Viewer",
+        "longDescription": "QuickScript .NET y SQL de Historian basados en las guías AVEVA de 2020; ficheros XML de watchlists de Object Viewer basados en ejemplos del usuario. Orientado a System Platform 2023. La importación de watchlists y la apertura del modo avanzado requieren comprobarse en la instalación de destino.",
         "developerName": "jlanzaslopez",
         "category": "Developer Tools",
         "capabilities": []
