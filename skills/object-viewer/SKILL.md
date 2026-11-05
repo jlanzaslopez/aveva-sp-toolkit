@@ -40,13 +40,12 @@ La validación XML no verifica la existencia de atributos en la Galaxy ni demues
 
 ## Modo avanzado: comando y diagnóstico
 
-Cuando se solicite abrir el modo avanzado, devolver el comando adecuado a la consola. El extracto de guía aportado indica `aaObjectViewer.exe /New` en `C:\Program Files (x86)\ArchestrA\Framework\Bin`. El usuario ha comunicado que no funciona en su entorno: conservar `/New` como indicación de esa fuente, sin presentarlo como probado ni sustituirlo por opciones inventadas.
+Cuando se solicite abrir el modo avanzado, devolver el comando adecuado a la consola. Ambos comandos siguientes han sido confirmados por el usuario en su Galaxy Repository. Usar la ruta completa, sin cambiar de carpeta. Esta comprobación corresponde a su instalación, no garantiza otras rutas o versiones.
 
-CMD, si existe el ejecutable en esa ruta:
+CMD:
 
 ```cmd
-cd /d "C:\Program Files (x86)\ArchestrA\Framework\Bin"
-aaObjectViewer.exe /New
+"C:\Program Files (x86)\ArchestrA\Framework\Bin\aaObjectViewer.exe" /New
 ```
 
 PowerShell, misma ruta y argumento, con sintaxis propia de la consola:
@@ -55,4 +54,4 @@ PowerShell, misma ruta y argumento, con sintaxis propia de la consola:
 & "C:\Program Files (x86)\ArchestrA\Framework\Bin\aaObjectViewer.exe" /New
 ```
 
-Si falla, identificar consola, equipo de ejecución, ruta real, versión y error exacto; distinguir fallo al localizar/ejecutar el programa de apertura sin modo avanzado. En PowerShell, `cd /d` no es la sintaxis de CMD y ejecutar desde la carpeta requiere `./aaObjectViewer.exe` o una ruta con el operador `&`. Comprobar primero la existencia del archivo; no concluir que el argumento es incorrecto por un error de ruta o de consola. No cerrar instancias ni elevar permisos como supuesto remedio.
+Si falla, identificar consola, equipo de ejecución, ruta real, versión y error exacto; distinguir fallo al localizar/ejecutar el programa de apertura sin modo avanzado. En PowerShell, usar el operador `&` delante de la ruta entre comillas. Comprobar primero la existencia del archivo; no concluir que el argumento es incorrecto por un error de ruta o de consola. No cerrar instancias ni elevar permisos como supuesto remedio.

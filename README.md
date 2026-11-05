@@ -69,4 +69,4 @@ La skill Historian SQL se centra en los capítulos SQL y añade una referencia d
 
 El objetivo de uso es System Platform 2023. Los ejemplos se han cotejado documentalmente; todavía no se han compilado ni ejecutado en esa versión. Antes de usarlos en una instalación, comprobar contexto, dependencias, calidad de datos y permisos. El repositorio no instala ni despliega cambios automáticamente.
 
-Object Viewer se basa en ejemplos XML y un extracto de guía aportados por el usuario. Entrega archivos `.xml`, conserva el orden y admite arrays completos (`[]`) y elementos (`[2]`). La importación real no se ha probado. El comando del modo avanzado está pendiente de diagnóstico en el equipo del usuario; se distingue la sintaxis de CMD de PowerShell.
+Object Viewer se basa en ejemplos XML y un extracto de guía aportados por el usuario. Entrega archivos `.xml`, conserva el orden y admite arrays completos (`[]`) y elementos (`[2]`). La importación real no se ha probado. Los comandos del modo avanzado, con ruta completa para CMD y PowerShell, han sido confirmados por el usuario en su Galaxy Repository.
